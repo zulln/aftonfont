@@ -1,0 +1,78 @@
+body {
+	font-family: arial;
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.inputform {
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	background-color: #6facde;
+	margin-bottom: 50px;
+}
+
+input {
+	margin: 30px;
+	margin-bottom: 0px;
+	width: 70%;
+	height: 70px;
+	font-size: 50px;
+}
+
+.right {
+	text-align: right;
+	margin: 0px;
+}
+
+.left {
+	text-align: left;
+	margin: 0px;
+}
+
+.msg {
+	width: 40%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.holder {
+	margin-bottom: 100px;
+}
+
+#desc {
+	color: grey;
+	margin: 5px;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 100px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+.apidemo {
+	font-family: monospace;
+	margin: 0px;
+}
+
+.graphs {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}

@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Aftonfonten á la carte</title>
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+
+		<link href="static/c3/c3.min.css" rel="stylesheet" type="text/css">
+		<script src="static/c3/d3.min.js" charset="utf-8"></script>
+		<script src="static/c3/c3.min.js"></script>
+
+		<style>
+			h1 {
+				font-size: {{ data.size }}px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="holder">
+			<h1>{{ data.size }} stycke pixlar!</h1>
+			<h2>Men bara {{ data.checks }} bockar.</h2>
+		</div>
+
+		<div class="inputform">
+			<form action="prenumerera" method="post">
+				<input name="mail" required type="email" placeholder="mail"><br>
+
+				<input name="size" required type="number" placeholder="{{ data.size }}">
+				<p id="desc">(Vi skickar ett mail när pixlarna överstiger detta värde, dock endast en gång per dygn)</p>
+
+				<br>
+				<input type="submit" value="Varna mig!">
+			</form>
+			<p class="right"><a href="ta-bort">Klicka här för att ta bort din adress</a>.</p>
+		</div>
+
+		<div class="graphs">
+			<b>Senaste dygnet</b>
+			<div id="chart"></div>
+		</div>
+		{{ graph|safe }}
+
+	</body>
+</html>
