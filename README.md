@@ -7,6 +7,7 @@ Create "database.db" from schema.sql by running; "sqlite3 database.db < schema.s
 Create a cron-job that runs main.py every 5 minutes or so.
 
 Create secret.py with credentials for mailgun, like this:
-`def getData():
+```
+def getData():
   return ("url", "api-key")
-`
+```
